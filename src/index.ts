@@ -27,9 +27,15 @@ const builder = new HtmlBuilder({
 app.get('/', async (_, res) => await builder.composeHtml(config.projectId, res));
 
 const server = app.listen(8080, () => {
-  const host = server.address().address;
-  const port = server.address().port;
+  const address = server.address();
+  if (address && typeof address != 'string') {
+    const host = address.address;
+    const port = address.port;
 
-  console.log(`Example app listening at http://${host}:${port}`);
+    console.log(`Example app listening at http://${host}:${port}`);
+  }
+  else {
+    console.log('Example app listening at http://unknow');
+  }
 });
 // app.listen(3000, () => console.log('Example app listening on port 3000!'));
