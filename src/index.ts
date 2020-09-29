@@ -1,8 +1,8 @@
 
 import { Config } from './config/config';
 import HtmlBuilder from './builder/HtmlBuilder';
-import MessageBuilder from './builder/messageBuilder';
-import DialogflowService from './service/dialogflowService';
+import MessageBuilder from './builder/MessageBuilder';
+import DialogflowService from './service/DialogflowService';
 import * as express from 'express';
 import dialogflow from 'dialogflow';
 
