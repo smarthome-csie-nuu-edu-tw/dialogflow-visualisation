@@ -1,5 +1,5 @@
 import { IIntent } from '../interface/IIntent';
-import MessageBuilder from '../builder/messageBuilder';
+import MessageBuilder from '../builder/MessageBuilder';
 import dialogflow from 'dialogflow';
 import { extractInputIntentName, extractOutputContexts } from '../utils/StringUtils';
 
