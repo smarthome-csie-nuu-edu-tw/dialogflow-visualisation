@@ -1,5 +1,5 @@
 import { IOutputContext } from '../interface/IOutputContext';
-import MessageBuilder from '../builder/messageBuilder';
+import MessageBuilder from '../builder/MessageBuilder';
 import DialogflowService from '../service/dialogflowService';
 
 export default class HtmlBuilder {
